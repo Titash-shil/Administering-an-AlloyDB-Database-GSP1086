@@ -19,17 +19,17 @@ PASTE THESE FOLLOWING COMMANDS IN `SSH` WINDOW
 export ALLOYDB=
 ```
 
+```
+echo $ALLOYDB  > alloydbip.txt
+```
+
 ```bash
-echo $ALLOYDB  > alloydbip.txt 
+psql -h $ALLOYDB -U postgres 
 ```
 
 - user's password
 ```
 Change3Me
-```
-
-```bash
-psql -h $ALLOYDB -U postgres
 ```
 
 ```bash
